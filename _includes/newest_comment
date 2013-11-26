@@ -1,0 +1,11 @@
+<!-- newest comment -->
+<div class="well">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4><strong>最新评论</strong></h4>
+
+			<!-- 在这里填入你的代码 -->     
+
+		</div>
+	</div>
+</div><!-- /newest comment -->

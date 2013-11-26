@@ -1,0 +1,19 @@
+      <div class="row">
+        <div class="col-lg-12">
+{% for category in site.categories %}
+    <a href="#{{ category | first }}">{{ category | first }} <span class="badge">{{ category | last |size }}</span></a>&nbsp;&nbsp;&nbsp;
+{% endfor %}
+
+
+
+	    {% for category in site.categories %}
+	    <h2><a name="{{ category | first }}" href="#{{ category | first }}" id="my_glyphicon"> <span class="glyphicon glyphicon-paperclip"> </span></a>{{ category | first }}</h2>
+	    <blockquote>
+		{% for post in category.last %}		
+		  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+		{% endfor %}
+	    </blockquote></br>
+	    {% endfor %}
+	</div>
+      </div>
+	  
